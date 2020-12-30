@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/index.html --open",
+    "start": "parcel ./src/index.html",
     "lint": "eslint --fix src/**/*.{js,jsx}",
     "format": "prettier --write \"*.{js,jsx,json,css}\""
   },
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/victorfch/wishlist-react#readme",
   "dependencies": {
     "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
