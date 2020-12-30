@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/victorfch/wishlist-react#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
