@@ -1,0 +1,50 @@
+{
+  "name": "react-wishlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html --open",
+    "lint": "eslint --fix src/**/*.{js,jsx}",
+    "format": "prettier --write \"*.{js,jsx,json,css}\""
+  },
+  "keywords": [
+    "parcel",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorfch/wishlist-react.git"
+  },
+  "author": "Victor Manuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorfch/wishlist-react/issues"
+  },
+  "homepage": "https://github.com/victorfch/wishlist-react#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": "airbnb",
+    "rules": {
+      "linebreak-style": "off"
+    }
+  },
+  "prettier": {
+    "semi": true
+  }
+}
