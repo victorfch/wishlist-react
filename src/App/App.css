@@ -2,11 +2,12 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-body,
-html {
+
+body, html {
   padding: 0;
   margin: 0;
 }
+
 .app {
   width: 400px;
   margin: auto;
@@ -16,14 +17,17 @@ html {
   margin-top: 2rem;
   background-color: whitesmoke;
 }
+
 .wish-input {
   border: 0;
   border-bottom: 3px dashed grey;
   padding: 0;
 }
+
 .wish-input__label {
   font-weight: 700;
 }
+
 .wish-input__field {
   width: 100%;
   border: 0;
@@ -31,25 +35,39 @@ html {
   font-size: 1.2rem;
   background-color: transparent;
 }
+
 .wish-list {
   list-style: none;
   padding: 0;
 }
+
 .wish-list__item {
   display: flex;
   font-size: 1.2rem;
   align-items: center;
 }
-.wish-list__item > * + * {
+
+.wish-list__item>*+* {
   margin-left: 1rem;
 }
+
 .wish-list__item input {
   width: 2rem;
   height: 2rem;
 }
+
 .wish-list__item--done label {
   text-decoration: line-through;
 }
+
+.wish-list__item--warning label {
+  color: orange;
+}
+
+.wish-list__item--danger label {
+  color: red;
+}
+
 .wish-clear {
   width: 100%;
   padding: 0.5rem;
