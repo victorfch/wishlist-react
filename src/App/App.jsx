@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 import WishInput from './WishInput';
 import WishList from './WishList';
 
-const wishes = [
+const initialWishes = [
   {
     text: 'Learn japanese',
     done: false,
@@ -18,13 +18,18 @@ const wishes = [
     done: false,
   },
 ];
-const App = () => (
-  <div className="app">
-    <h1>My wishlist app</h1>
-    <WishInput />
-    <WishList wishes={wishes} />
-    <button type="button" className="wish-clear">Archive done</button>
-  </div>
-);
+const App = () => {
+  const [wishes, setWishes] = useState(initialWishes);
+  return (
+    <div className="app">
+      <h1>My wishlist app</h1>
+      <WishInput onNewWish={(wish) => setWishes([wish, ...wishes])} />
+      <WishList wishes={wishes} />
+      <button type="button" className="wish-clear">
+        Archive done
+      </button>
+    </div>
+  );
+};
 
 export default App;
